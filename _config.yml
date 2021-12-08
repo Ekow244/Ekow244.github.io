@@ -5,6 +5,6 @@ url: "http://www.mikedeng.github.io"
 
 paginate: 10
 
-markdown: rdiscount
+
 permalink: pretty
 pygments: true
