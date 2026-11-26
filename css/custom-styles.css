@@ -578,3 +578,108 @@ body.sml-open nav.cbp-spmenu-left {
 .link {
 	color: #007bb6;
 }
+
+/* CV content blocks */
+
+.cv-tagline {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin: 1em auto 0 auto;
+	max-width: 700px;
+}
+
+.cv-nav {
+	text-align: center;
+	font-size: 1.3em;
+	margin: 0 auto 2.5em auto;
+	max-width: 700px;
+	line-height: 2;
+}
+
+.cv-nav a {
+	margin: 0 0.5em;
+	border-bottom: 2px solid #000;
+}
+
+.cv-block,
+.cv-entry {
+	width: 700px;
+	max-width: 100%;
+	margin: auto;
+	padding: 1.6em 0.5em;
+	font-size: 1.3em;
+	line-height: 1.6;
+}
+
+.cv-center {
+	text-align: center;
+}
+
+.cv-title {
+	font-size: 1.2em;
+	font-weight: 700;
+	margin-bottom: 0.4em;
+}
+
+.cv-when,
+.cv-year {
+	font-weight: 400;
+	color: #33524f;
+}
+
+.cv-when {
+	margin-bottom: 0.6em;
+}
+
+.cv-year {
+	font-size: 0.8em;
+	margin-left: 0.4em;
+}
+
+.cv-entry ul {
+	padding-left: 1.2em;
+	margin: 0;
+}
+
+.cv-entry li {
+	margin-bottom: 0.5em;
+}
+
+.cv-entry p,
+.cv-block p {
+	margin: 0 0 0.8em 0;
+}
+
+.cv-logo-row img {
+	margin: 1.5em 1em 0 1em;
+}
+
+.link {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+	.cv-block,
+	.cv-entry,
+	.cv-tagline,
+	.cv-nav {
+		font-size: 1.45em;
+	}
+	.home-heading-position {
+		font-size: 420%;
+		margin-top: 2em;
+	}
+	.heading-position {
+		font-size: 380%;
+		margin-top: 1.6em;
+	}
+}
+
+.cv-photo {
+	display: block;
+	width: 15em;
+	max-width: 70%;
+	margin: 0.5em auto 1.8em auto;
+}

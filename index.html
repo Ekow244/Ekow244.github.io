@@ -1,502 +1,457 @@
 <!DOCTYPE html>
-<?php if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start(); ?>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="UTF-8">
 		<title>Daniel Melfah</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="css/custom-styles.css" media="screen">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="description" content="Daniel Melfah is an techpreneur, software engineer, and occasional writer. This website serves as his blog and portfolio. Come in and check it out!">
-    <meta name="author" content="Daniel Melfah">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-55613013-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-    <meta name="google-site-verification" content="puee2tKAkqHvEQpe4gRh6K607o6IkEDSKSWwNv0QUn8" />
+		<link rel="stylesheet" href="css/custom-styles.css" media="screen">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+		<meta name="description" content="Daniel Melfah: Release Manager who builds LLM agents and the rules that keep them honest. Incident response, observability, security.">
+		<meta name="author" content="Daniel Melfah">
+		<meta name="google-site-verification" content="puee2tKAkqHvEQpe4gRh6K607o6IkEDSKSWwNv0QUn8" />
 	</head>
 	<body>
 
-        <!-- Carousel -->
-          <div id="myCarousel" class="carousel slide" data-interval="false" data-wrap="false">
+	<div id="myCarousel" class="carousel slide" data-interval="false" data-wrap="false">
+		<div class="carousel-inner">
 
-        <!-- Carousel items -->
-              <div class="carousel-inner">
-                  <div class="item dark-background active">
-                    <div class="container">
-                      <div class="home-heading-position">Daniel Melfah</div>
+			<!-- 0. Home: summary and AI agent work -->
+			<div class="item dark-background active">
+				<div class="container">
+					<div class="home-heading-position">Daniel Melfah</div>
+					<div class="cv-tagline">
+						Release Manager at Viamo. I build LLM agents and the rules that keep them honest.
+						<br>Toronto, ON · <a class="hyperlink" href="mailto:melfah.daniel@gmail.com">melfah.daniel@gmail.com</a>
+					</div>
 
-                      <div class="icons">
-                        <a href="https://www.linkedin.com/in/daniel-melfah-6b5a6a14a/" class="fa fa-linkedin-square fa-2x social-media" id="linkedin"></a>
-                        <a href="https://github.com/Ekow244" class="fa fa-github fa-2x social-media" id="github"></a>
-                        <a href="https://medium.com/@danielmelfah" class="fa fa-medium fa-2x social-media" id="medium"></a>
-                        <a href="https://twitter.com/danielEMelfah" class="fa fa-twitter fa-2x social-media" id="twitter"></a>
-                      </div>
+					<div class="icons">
+						<a href="https://www.linkedin.com/in/daniel-melfah-6b5a6a14a/" class="fa fa-linkedin-square fa-2x social-media" id="linkedin" aria-label="LinkedIn"></a>
+						<a href="https://github.com/Ekow244" class="fa fa-github fa-2x social-media" id="github" aria-label="GitHub"></a>
+						<a href="https://medium.com/@danielmelfah" class="fa fa-medium fa-2x social-media" id="medium" aria-label="Medium"></a>
+					</div>
 
-                      <div class="medium-heading">
-                        <span>Articles</span>
-                      </div>
+					<div class="cv-nav">
+						<a href="#" class="hyperlink" onclick="goToSlide(1);return false;">What I bring</a>
+						<a href="#" class="hyperlink" onclick="goToSlide(2);return false;">Experience</a>
+						<a href="#" class="hyperlink" onclick="goToSlide(3);return false;">Projects</a>
+						<a href="#" class="hyperlink" onclick="goToSlide(4);return false;">Skills &amp; education</a>
+						<a href="#" class="hyperlink" onclick="goToSlide(5);return false;">Writing</a>
+					</div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="https://medium.com/@danielmelfah/writing-automated-tests-in-kotlin-420aff0a88b2">
-                            <img src="images/1.png">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/writing-automated-tests-in-kotlin-420aff0a88b2" class="hyperlink">
-                            Writing Mobile Automated Tests in Kotlin
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          <a href="https://medium.com/@danielmelfah/writing-automated-tests-in-kotlin-420aff0a88b2" class="hyperlink">
-                            In this article, I take you through how I write my automated tests in kotlin...
-                          </a>
-                        </div>
-                      </div>
+					<div class="medium-heading"><span>About</span></div>
+					<div class="cv-block">
+						<p>
+							Seven years keeping production systems running: incident response, observability, release
+							engineering and cloud security, most of it at Viamo, a platform that delivers voice and SMS
+							information services in low-connectivity regions.
+						</p>
+						<p>
+							Over the past year I have designed, on my own initiative, a set of LLM agents that investigate
+							production alarms and test software changes, together with the written constraints they work
+							under. My interest in AI safety comes from that work: finding out what an agent actually did,
+							whether its report can be checked, and who is accountable when it is wrong.
+						</p>
+					</div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="https://medium.com/@danielmelfah/linux-shell-tools-to-make-life-easier-14f1b0c8e74d">
-                            <img src="images/2.jpg">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/linux-shell-tools-to-make-life-easier-14f1b0c8e74d" class="hyperlink">
-                            Linux Shell Tools to Make Life Easier
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          <a href="https://medium.com/@danielmelfah/linux-shell-tools-to-make-life-easier-14f1b0c8e74d" class="hyperlink">
-                            In everyday life, I write about some tools I've used that greatly increases my productivity...
-                          </a>
-                        </div>
-                      </div>
+					<div class="medium-heading"><span>AI agent work</span></div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="https://medium.com/@danielmelfah/troubleshooting-in-the-shell-e7287139426c">
-                            <img src="images/trouble.jpg">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/troubleshooting-in-the-shell-e7287139426c" class="hyperlink">
-                            Troubleshooting in the Linux Shell
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          <a href="https://medium.com/@danielmelfah/troubleshooting-in-the-shell-e7287139426c" class="hyperlink">
-                            I created a useful script that fixes a lot of issues I face frequently...
-                          </a>
-                        </div>
-                      </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Incident-triage agent with an evidence ledger</div>
+						<ul>
+							<li>A read-only investigator for production alarms. It first finds what emits the alarm, then
+								gathers evidence across infrastructure code, application code, error tracking, logs and the
+								data warehouse.</li>
+							<li>Every claim in its report is marked <b>verified</b> (with the query, file and line, or log
+								excerpt), <b>unverified</b> (with the exact command that would settle it) or <b>refuted</b>
+								(kept in the report with what disproved it).</li>
+							<li>A root cause may be stated as fact only with two independent sources of evidence, after an
+								explicit attempt to refute it.</li>
+							<li>The agent cannot post or change anything. A separate session checks its claims before a
+								human approves any ticket or message.</li>
+						</ul>
+					</div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="https://medium.com/@danielmelfah/implementing-grpc-elixir-in-a-mobile-application-e4b751001170">
-                            <img src="images/extension.png">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/implementing-grpc-elixir-in-a-mobile-application-e4b751001170" class="hyperlink">
-                            Implementing gRPC in a mobile application
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          <a href="https://medium.com/@danielmelfah/implementing-grpc-elixir-in-a-mobile-application-e4b751001170" class="hyperlink">
-                           Taking you through my journey incorporating gRPC...
-                          </a>
-                        </div>
-                      </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">QA and release agents</div>
+						<ul>
+							<li>A daily QA run that takes tickets waiting for QA, deploys each branch to a test environment,
+								runs unit tests, browser tests and simulated SMS and voice calls, reads the results back from
+								the database and drafts a results table for my approval.</li>
+							<li>Two adversarial reviewers: one tries to disprove a change before it is merged, the other
+								looks for what a finished change breaks elsewhere.</li>
+						</ul>
+					</div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="">
-                            <img src="images/3.jpg">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/a-typical-day-in-the-life-of-the-0v3r10rd-e2b18b71fecd?source=your_stories_page----------------------------------------" class="hyperlink">
-                            What typically happens in my day...
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          
-                        </div>
-                      </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Oversight rules for agents</div>
+						<ul>
+							<li>Sign-off is a human decision. Every claim cites evidence or is labelled unverified. Agents
+								never merge, deploy or close a ticket. Approval of one message does not cover the next.</li>
+							<li>The rules came from failures I found, such as a test command that exits successfully
+								without running any tests, which an agent would otherwise report as "tests pass".</li>
+							<li>Sanitised samples:
+								<a class="link" href="https://github.com/Ekow244/agent-guardrails">github.com/Ekow244/agent-guardrails</a></li>
+						</ul>
+					</div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="https://medium.com/@danielmelfah/two-birds-on-a-hill-80c25070a65c?source=your_stories_page----------------------------------------">
-                            <img src="images/4.jpg">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/two-birds-on-a-hill-80c25070a65c?source=your_stories_page----------------------------------------" class="hyperlink">
-                            Two Birds on a hill...
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          <a href="https://medium.com/@danielmelfah/two-birds-on-a-hill-80c25070a65c?source=your_stories_page----------------------------------------" class="hyperlink">
-                            I love writing and I write about characters I think would be...
-                          </a>
-                        </div>
-                      </div>
+					<div class="toggle-menu"><div class="btn" aria-hidden="true"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div></div>
+				</div>
+			</div>
 
-                      <div class="medium-story bottom-border">
-                        <div class="medium-image">
-                          <a href="https://medium.com/@danielmelfah/arrays-for-the-uninitiated-acb8972188d">
-                            <img src="images/arrays.jpg">
-                          </a>
-                        </div>
-                        <div class="medium-title">
-                          <a href="https://medium.com/@danielmelfah/arrays-for-the-uninitiated-acb8972188d" class="hyperlink">
-                            Arrays for the unitiated
-                          </a>
-                        </div>
-                        <div class="medium-caption">
-                          <a href="https://medium.com/@danielmelfah/two-birds-on-a-hill-80c25070a65c?source=your_stories_page----------------------------------------" class="hyperlink">
-                            I try to make the case for arrays as my favourite data structure
-                          </a>
-                        </div>
-                      </div>
-                    
+			<!-- 1. What I bring -->
+			<div class="item light-background">
+				<div class="container">
+					<div class="heading-position">What I Bring</div>
+					<div class="cv-block cv-center">The skills and experience I bring to an AI safety project.</div>
 
-                      
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">I reconstruct failures from scattered logs for a living</div>
+						<p>Seven years in production reliability and incident response, the last five at Viamo (voice, SMS
+							and AI services across AWS, GCP and OCI). Root-cause analysis means stitching together
+							application logs, error tracking, metrics, call records and warehouse data from systems owned
+							by different teams and vendors.</p>
+					</div>
 
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">I built an LLM agent that does failure attribution</div>
+						<p>On my own initiative I designed an incident-triage agent that investigates production alarms
+							read-only and keeps an evidence ledger: every claim is verified, unverified or refuted. A root
+							cause needs two independent sources. A separate session checks the agent's claims before a
+							human approves anything.</p>
+					</div>
 
-                <!-- Push menu button -->
-                      <div class="main">
-                          <section>
-                              <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                              <div class="toggle-slide-left1 toggle-menu menu-left push-body">
-                                <div class="btn" aria-hidden="true">
-                                  <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                                </div>
-                              </div>
-                          </section>
-                      </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">I know which log information turns out to matter</div>
+						<p>The agent's first step is to find what emitted the alarm, because many "incidents" were
+							artefacts of how a metric was computed. I can bring concrete cases of missing or misleading
+							records to the question of what logs must contain.</p>
+					</div>
 
-                    </div>
-                  </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">I have built multi-agent workflows and their oversight rules</div>
+						<p>A daily QA agent, two adversarial review agents, and written constraints: agents never merge,
+							deploy or sign off, and approval of one message does not cover the next.
+							<a class="link" href="https://github.com/Ekow244/agent-guardrails">Sanitised samples</a>.</p>
+					</div>
 
-                  <div class="item light-background">
-                    <div class="container">
-                      <div class="heading-position">About Me</div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Observability, security and code</div>
+						<ul>
+							<li>Prometheus, Grafana, CloudWatch, Sentry, BigQuery and centralised logging.</li>
+							<li>Postgraduate Certificate in Cybersecurity; BSc Computer Engineering, with engineering
+								mathematics, probability and statistics.</li>
+							<li>Intermediate Python and Bash. Most of my code is now written with AI coding tools, which I
+								direct and review. I work daily with Git and GitHub.</li>
+						</ul>
+					</div>
 
-                      <div class="row">
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">What I lack</div>
+						<p>I have not done ML research or trained models, I have not used OpenTelemetry in depth, and I
+							have no legal background. I contribute as an engineer and want to learn the research side.</p>
+					</div>
 
-                        <div class="col-sm-6 about-me-col">
-                          <img src="images/moi.jpeg" class="image-thumbnail">
-                        </div>
+					<div class="cv-entry">
+						<div class="cv-title">How I like to work</div>
+						<p>Most interested in building scaffolded LLM agents, prompting, coding with AI tools,
+							collaborative work on GitHub, cybersecurity, first-principles reasoning and long discussions,
+							with a paper as the goal.</p>
+					</div>
 
-                        <div class="col-sm-6 about-me-col">
-                          <div class="caption-position" style="margin-top: 0">
-                            Hi! This is Daniel Melfah. As an accomplished Computer Engineer, I love writing code and stories. 
-                            I enjoy using my problem-solving skills in making a social impact, as a result I have been the lead on many tasks and features.                             
-                            As part of my responsibilities, I spend a lot of time provisioning and configuring development environments. I also write a lot of technical documentation. 
-                            I have volunteered my skills in working with other global teams where I have grown a lot both professionally and as an individual. 
-                            I have also made a lot of impact by working on a platform that has given a voice to millions of people in rural areas and ultimately improved communication.
-                            
-                          </div>
+					<div class="toggle-menu"><div class="btn" aria-hidden="true"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div></div>
+				</div>
+			</div>
 
-                         
-                          <div class="caption-position">
-                            You can reach me at <b>daniel.ekow.baidoo@gmail.com</b>
-                          </div>
-                        </div>
+			<!-- 2. Experience -->
+			<div class="item light-background">
+				<div class="container">
+					<div class="heading-position">Experience</div>
 
-                    </div>
+					<div class="company-logos">
+						<a href="https://viamo.io/"><img src="images/VIAMO LOGO (1).jpg" alt="Viamo"></a>
+					</div>
 
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Release Manager (Cloud Infrastructure &amp; DevSecOps)</div>
+						<div class="cv-when">Viamo · remote · January 2022 to present</div>
+						<ul>
+							<li>Lead production incident response and release management for customer-facing voice, SMS and
+								AI services running on AWS, GCP, OCI, Kubernetes and Linux.</li>
+							<li>Built observability with Prometheus, Grafana, CloudWatch and centralised logging; defined
+								service level indicators, objectives and error budgets to decide which reliability work comes
+								first.</li>
+							<li>Built automated responses to known failure conditions by correlating metrics, logs and
+								alerts, with human review of every production change.</li>
+							<li>Cut annual infrastructure spend from about $30K to $17K by moving workloads to OCI and
+								Graviton instances, and cut monthly GCP spend by about 25%.</li>
+							<li>Received the Viamo Values Award for delight and impact.</li>
+						</ul>
+					</div>
 
-                <!-- Push menu button -->
-                      <div class="main">
-                          <section>
-                              <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                              <div class="toggle-slide-left2 toggle-menu menu-left push-body">
-                                <div class="btn" aria-hidden="true">
-                                  <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                                </div>
-                              </div>
-                          </section>
-                      </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">NOC Engineer</div>
+						<div class="cv-when">Viamo · remote · January 2021 to January 2022</div>
+						<ul>
+							<li>Automated infrastructure and operations with Terraform, Ansible, Python, Bash and Jenkins,
+								halving deployment time from about 40 minutes to under 20.</li>
+							<li>Reviewed system designs for failure modes before release; wrote the runbooks and
+								troubleshooting guides engineers use during incidents.</li>
+							<li>Applied least-privilege access, secrets management and secure networking across cloud
+								infrastructure.</li>
+						</ul>
+					</div>
 
-                    </div>
-                  </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Junior Systems Administrator</div>
+						<div class="cv-when">Electricity Company of Ghana · Accra · September 2019 to December 2020</div>
+						<ul>
+							<li>Worked with PLC programming and SCADA systems in an electricity utility: early exposure to
+								industrial control systems and the security of critical infrastructure.</li>
+							<li>Supported AWS environments, Docker and Kubernetes workloads, and incident troubleshooting.</li>
+						</ul>
+					</div>
 
-                  <div class="item light-background">
-                    <div class="container">
-                      <div class="heading-position">Experience</div>
-                      <div class="caption-position center">
-                        I'm currently working at Viamo.
-                        <br /><br />
-                      </div>
-                      <br />
-                      <div class="subheading-position">Past Experiences</div>
-                      <br />
+					<div class="subheading-position">Open Source &amp; Earlier</div>
 
-                      <div class="company-logos">
-                        <a href="https://viamo.io/">
-                          <img src="images/VIAMO LOGO (1).jpg">
-                         
-                          <div class="caption-position" style="margin-top: 0">
-                            
-                          </div>
-                         
-                         
-                          
-                          
-                        </a>
+					<div class="company-logos cv-logo-row">
+						<a href="https://openfoodnetwork.org/"><img src="images/openfood.png" alt="Open Food Network"></a>
+						<a href="https://wrangleapp.io/"><img src="images/wrang.png" alt="Wrangle"></a>
+					</div>
 
-                        <div class="caption-position center">
-                          Viamo, formerly known as Votomobile. I work there as a Site Reliability Engineer.
-                          <br /><br />
-                        </div>
+					<div class="cv-entry">
+						<ul>
+							<li><b>Open Food Network.</b> Software Development Engineer in Test on an open-source
+								marketplace platform for local food, working with a distributed global team.</li>
+							<li><b>Wrangle.</b> DevOps Engineer.</li>
+						</ul>
+					</div>
 
-                        
-                      </div>
+					<div class="toggle-menu"><div class="btn" aria-hidden="true"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div></div>
+				</div>
+			</div>
 
-                      <div class="company-logos">
-                        <a href="https://wrangleapp.io/">
-                          <img src="images/wrang.png">
+			<!-- 3. Projects -->
+			<div class="item light-background">
+				<div class="container">
+					<div class="heading-position">Projects</div>
 
-                          <div class="caption-position" style="margin-top: 0">
-                           
-                          </div>
-                          
-                        </a>
-                        <div class="caption-position center">
-                          I worked at Wrangle as a DevOps Engineer
-                          <br /><br />
-                        </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Humanity Explorer <span class="cv-year">2026</span></div>
+						<p>A 16-chapter branching narrative game about the Atlantic slave trade and its descendants,
+							written in TypeScript with AI coding tools. About 240 automated tests walk every choice path,
+							including tests that enforce content rules (for example, that capture is never framed as the
+							player's failure).
+							<a class="link" href="https://ekow244.github.io/humanity-explorer-play/">Play the first five chapters</a>.</p>
+					</div>
 
-                        
-                      </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Tema Utilities Lab <span class="cv-year">2026</span></div>
+						<p>A SCADA and PLC training simulator that runs in the browser: executable ladder logic, PID
+							control, alarms, fault injection and batch records.
+							<a class="link" href="https://ekow244.github.io/tema-utilities-scada/">Demo</a> ·
+							<a class="link" href="https://github.com/Ekow244/tema-utilities-scada">Code</a>.</p>
+					</div>
 
-                      <div class="company-logos">
-                        <a href="https://openfoodnetwork.org/">
-                          <img src="images/openfood.png">
-                          <div class="caption-position" style="margin-top: 0">
-                            
-                          </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Clearance <span class="cv-year">2026</span></div>
+						<p>A multi-tenant HIPAA security risk assessment platform, with row-level security in Postgres
+							and an integration test proving that one tenant cannot read or write another's data.
+							<a class="link" href="https://github.com/Ekow244/HIPAA">Code</a>.</p>
+					</div>
 
-                          
-                        </a>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">PrairieTask <span class="cv-year">2025 to present</span></div>
+						<p>Built and run a production web platform with more than 100 registered users, alone:
+							infrastructure, authentication, monitoring, backups, security and incident response.</p>
+					</div>
 
-                        <div class="caption-position center">
-                          At openfoodnetwork, I was a Software Developer Engineer in Test 
-                          <br /><br />
-                        </div>
+					<div class="subheading-position">Earlier</div>
 
-                        
-                      </div>
+					<div class="projects-info">
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/globalshortcuts.png" class="image-thumbnail" alt="">
+								<div class="project-caption">
+									<span><b>GPT-3 in Slack</b></span><br />
+									A Slack bot that turned plain-language questions into SQL queries for the platform
+									database (2021).
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<img src="images/tensor.jpg" class="image-thumbnail" alt="">
+								<div class="project-caption">
+									<span><b>Navigation Aid for the Blind</b></span><br />
+									An embedded system built on a Raspberry Pi, using TensorFlow for object identification.
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<a href="https://www.accrawan.org/"><img src="images/accrawan.jpg" class="image-thumbnail" alt=""></a>
+								<div class="project-caption">
+									<span><a href="https://www.accrawan.org/" class="hyperlink">AccraWAN</a></span><br />
+									An air quality sensor network over Accra.
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    
-                      <br />
-                      <br />
-                      <!-- <div class="subsubheading-position">Small Investments</div>
-                      <br /> -->
-                      <!-- <div class="investment-logos">
-                        <img src="https://photos.angel.co/startups/i/485197-36677d8c3789afd2c7cbd9b04b38b5c9-medium_jpg.jpg">
-                        <img src="https://photos.angel.co/startups/i/7514211-be4c0921b8333896bd3b4afd108e3d92-medium_jpg.jpg">
-                        <img src="https://photos.angel.co/startups/i/7532413-499fed3a5c79928886df72531415dcb4-medium_jpg.jpg">
-                        <img src="https://photos.angel.co/startups/i/7947382-37cdcb974e519e13693ebed61aa01823-medium_jpg.jpg">
-                      </div> -->
+					<div class="toggle-menu"><div class="btn" aria-hidden="true"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div></div>
+				</div>
+			</div>
 
-                <!-- Push menu button -->
-                      <div class="main">
-                          <section>
-                              <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                              <div class="toggle-slide-left3 toggle-menu menu-left push-body">
-                                <div class="btn" aria-hidden="true">
-                                  <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                                </div>
-                              </div>
-                          </section>
-                      </div>
+			<!-- 4. Skills and education -->
+			<div class="item light-background">
+				<div class="container">
+					<div class="heading-position">Skills</div>
 
-                    </div>
-                  </div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">LLM agents</div>
+						<p>Agent and sub-agent design with Claude Code, prompting, tool permissions, verification gates,
+							human approval steps.</p>
+					</div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Logs and incidents</div>
+						<p>Root-cause analysis, structured and centralised logging, Prometheus, Grafana, CloudWatch,
+							Sentry, BigQuery.</p>
+					</div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Testing</div>
+						<p>Test design, end-to-end and browser automation (Playwright, Selenium), regression analysis,
+							release engineering.</p>
+					</div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Security</div>
+						<p>IAM and least privilege, secrets management, container and infrastructure hardening; Nessus,
+							Trivy, Snyk, SonarQube, OWASP ZAP.</p>
+					</div>
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Infrastructure</div>
+						<p>AWS, GCP, OCI, Kubernetes, Docker, Linux, Terraform, Ansible, Jenkins.</p>
+					</div>
+					<div class="cv-entry">
+						<div class="cv-title">Code</div>
+						<p>Intermediate Python and Bash; TypeScript and PHP codebases. Most of my code is now written with
+							AI coding tools, which I direct and review.</p>
+					</div>
 
-                  <div class="item light-background">
-                    <div class="container wide">
-                      <div class="heading-position">Projects</div>
-                      <div class="projects-info">
-                        <div class="row">
-                        <div class="col-sm-4">
-                        <a href="https://slack.com/apps/collection/shortcuts">
-                         <img src="images/globalshortcuts.png" class="image-thumbnail">
-                        </a>
-                        <div class="project-caption">
-                        <span>
-                        <a href="https://slack.com/apps/collection/shortcuts" class="hyperlink">Open AI GPT-3 Integration in Slack</a>
-                        <span class="online">online</span>
-                        </span>
-                        <br />
-                        I created a slack bot that translates normal speak to SQL queries for the platform database
-                        <br />
-                        
-                        
-                        </div>
-                        </div>
-                        <div class="col-sm-4">
-                        <a href="https://miren-live.herokuapp.com/shop">
-                        <img src="images/del.png" class="image-thumbnail">
-                        </a>
-                        <div class="project-caption">
-                        <span>
-                        <a href="https://miren-live.herokuapp.com/shop" class="hyperlink">Miren Online Shop</a>
-                        <span class="online">online</span>
-                        </span>
-                        <br />
-                        An e-commerce website built using React. It was a learning project that involved a lot of technologies in the implementation 
-                        <br />
-                        
-                        </div>
-                        </div>
-                        <div class="col-sm-4">
-                        <a href="">
-                        <img src="images/medofo.jpg" class="image-thumbnail">
-                        </a>
-                        <div class="project-caption">
-                        <span>
-                        <a href="" class="hyperlink">Medofo</a>
-                        <span class="online">online</span>
-                        </span>
-                        <br />
-                        Medofo is an online dating application built using flutter and dart. The application is now live on the playstore
-                        </div>
-                        </div>
-                        </div>
-                        <div class="row">
-                        <div class="col-sm-4">
-                        <a href="https://www.accrawan.org/">
-                        <img src="images/accrawan.jpg" class="image-thumbnail">
-                        </a>
-                        <div class="project-caption">
-                        <span>
-                        <a href="https://www.accrawan.org/" class="hyperlink">AccraWAN</a>
-                        <span class="online">online</span>
-                        </span>
-                        <br />
-                        Air Quality Network project over Accra
-                        </div>
-                        </div>
-                        <div class="col-sm-4">
-                        <a href="">
-                        <img src="images/inv.jpg" class="image-thumbnail">
-                        </a>
-                        <div class="project-caption">
-                        <span>
-                        <a href="https://delinvoicing.herokuapp.com/" class="hyperlink">Delinvoicing</a>
-                        <span class="online">online</span>
-                        </span>
-                        <br />
-                        Online Invoicing application built with Python Django
-                        </div>
-                        </div>
-                        <div class="col-sm-4">
-                        <a href="">
-                        <img src="images/tensor.jpg" class="image-thumbnail">
-                        </a>
-                        <div class="project-caption">
-                        <span>
-                        <a href="" class="hyperlink">Navigation Aid for the Blind</a>
-                        <span class="offline">offline</span>
-                        </span>
-                        <br />
-                        Hardware embedded system designed and built using a raspberry pi and tensorflow for object identification.
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        
-                        <div class="main">
-                        <section>
-                        
-                        <div class="toggle-slide-left4 toggle-menu menu-left push-body">
-                        <div class="btn" aria-hidden="true">
-                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                        </div>
-                        </div>
-                        </section>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item light-background">
-                        <div class="container">
-                      <div class="heading-position">My Book Tier List</div>
-                      <div class="caption-position">
-                        
-                        <ul>
-                          <li>Godel, Escher, Bach: An Eternal Golden Braid by Douglas Hofsdater  </li>
-                          <li>Azazeel by Youssef Ziedan | Sapiens by Yuval Noah Harari</li>
-                          <li>War and Peace by Leo Tolstoy | The Book of Night Women by Marlon James | Man's Search for Meaning by Victor Franz </li>
-                          <li>Never Let me go by Kazuo Ishiguro | Notes from Underground by Fyodor Dostoevsky</li>
+					<div class="subheading-position">Education</div>
 
+					<div class="cv-entry bottom-border">
+						<div class="cv-title">Postgraduate Certificate, Cybersecurity</div>
+						<div class="cv-when">George Brown College, Toronto</div>
+					</div>
+					<div class="cv-entry">
+						<div class="cv-title">BSc Computer Engineering</div>
+						<div class="cv-when">University of Energy and Natural Resources, Ghana · engineering mathematics,
+							calculus, probability and statistics</div>
+					</div>
 
+					<div class="toggle-menu"><div class="btn" aria-hidden="true"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div></div>
+				</div>
+			</div>
 
+			<!-- 5. Writing -->
+			<div class="item light-background">
+				<div class="container">
+					<div class="heading-position">Writing</div>
 
-                      </ul></div>
+					<div class="medium-story bottom-border">
+						<div class="medium-image">
+							<a href="https://medium.com/@danielmelfah/troubleshooting-in-the-shell-e7287139426c"><img src="images/trouble.jpg" alt=""></a>
+						</div>
+						<div class="medium-title">
+							<a href="https://medium.com/@danielmelfah/troubleshooting-in-the-shell-e7287139426c" class="hyperlink">Troubleshooting in the Linux Shell</a>
+						</div>
+						<div class="medium-caption">
+							<a href="https://medium.com/@danielmelfah/troubleshooting-in-the-shell-e7287139426c" class="hyperlink">A script that fixes a lot of issues I face frequently...</a>
+						</div>
+					</div>
 
-                <!-- Push menu button -->
-                      <div class="main">
-                          <section>
-                              <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-                              <div class="toggle-slide-left5 toggle-menu menu-left push-body">
-                                <div class="btn" aria-hidden="true">
-                                  <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                                </div>
-                              </div>
-                          </section>
-                      </div>
+					<div class="medium-story bottom-border">
+						<div class="medium-image">
+							<a href="https://medium.com/@danielmelfah/writing-automated-tests-in-kotlin-420aff0a88b2"><img src="images/1.png" alt=""></a>
+						</div>
+						<div class="medium-title">
+							<a href="https://medium.com/@danielmelfah/writing-automated-tests-in-kotlin-420aff0a88b2" class="hyperlink">Writing Mobile Automated Tests in Kotlin</a>
+						</div>
+						<div class="medium-caption">
+							<a href="https://medium.com/@danielmelfah/writing-automated-tests-in-kotlin-420aff0a88b2" class="hyperlink">How I write my automated tests in Kotlin...</a>
+						</div>
+					</div>
 
-                    </div>
-                  </div>
-              </div>
+					<div class="medium-story bottom-border">
+						<div class="medium-image">
+							<a href="https://medium.com/@danielmelfah/linux-shell-tools-to-make-life-easier-14f1b0c8e74d"><img src="images/2.jpg" alt=""></a>
+						</div>
+						<div class="medium-title">
+							<a href="https://medium.com/@danielmelfah/linux-shell-tools-to-make-life-easier-14f1b0c8e74d" class="hyperlink">Linux Shell Tools to Make Life Easier</a>
+						</div>
+						<div class="medium-caption">
+							<a href="https://medium.com/@danielmelfah/linux-shell-tools-to-make-life-easier-14f1b0c8e74d" class="hyperlink">Tools I've used that greatly increase my productivity...</a>
+						</div>
+					</div>
 
+					<div class="medium-story bottom-border">
+						<div class="medium-image">
+							<a href="https://medium.com/@danielmelfah/implementing-grpc-elixir-in-a-mobile-application-e4b751001170"><img src="images/extension.png" alt=""></a>
+						</div>
+						<div class="medium-title">
+							<a href="https://medium.com/@danielmelfah/implementing-grpc-elixir-in-a-mobile-application-e4b751001170" class="hyperlink">Implementing gRPC in a mobile application</a>
+						</div>
+						<div class="medium-caption">
+							<a href="https://medium.com/@danielmelfah/implementing-grpc-elixir-in-a-mobile-application-e4b751001170" class="hyperlink">My journey incorporating gRPC...</a>
+						</div>
+					</div>
 
+					<div class="medium-story bottom-border">
+						<div class="medium-image">
+							<a href="https://medium.com/@danielmelfah/arrays-for-the-uninitiated-acb8972188d"><img src="images/arrays.jpg" alt=""></a>
+						</div>
+						<div class="medium-title">
+							<a href="https://medium.com/@danielmelfah/arrays-for-the-uninitiated-acb8972188d" class="hyperlink">Arrays for the uninitiated</a>
+						</div>
+						<div class="medium-caption">
+							<a href="https://medium.com/@danielmelfah/arrays-for-the-uninitiated-acb8972188d" class="hyperlink">The case for arrays as my favourite data structure</a>
+						</div>
+					</div>
 
-        <!-- Carousel nav
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-        
-          </div> -->
+					<div class="cv-block cv-center">
+						More essays, including one on <i>Gödel, Escher, Bach</i>, on
+						<a class="link" href="https://medium.com/@danielmelfah">Medium</a>.
+					</div>
 
-        <!-- Push Menu -->
+					<div class="subheading-position">My Book Tier List</div>
+					<div class="cv-entry">
+						<ul>
+							<li>Gödel, Escher, Bach: An Eternal Golden Braid by Douglas Hofstadter</li>
+							<li>Azazeel by Youssef Ziedan | Sapiens by Yuval Noah Harari</li>
+							<li>War and Peace by Leo Tolstoy | The Book of Night Women by Marlon James | Man's Search for Meaning by Viktor Frankl</li>
+							<li>Never Let Me Go by Kazuo Ishiguro | Notes from Underground by Fyodor Dostoevsky</li>
+						</ul>
+					</div>
 
-          <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <a href='#' class="button1 menu-buttons" onClick="javascript:goToSlide(0);">Home</a>
-              <a href='#' class="button2 menu-buttons" onClick="javascript:goToSlide(1);">About Me</a>
-              <a href="#" class="button3 menu-buttons" onClick="javascript:goToSlide(2);">Experience</a>
-              <a href="#" class="button4 menu-buttons" onClick="javascript:goToSlide(3);">Projects</a>
-              <a href="#" class="button5 menu-buttons" onClick="javascript:goToSlide(4);">My Book Tier List</a>
+					<div class="toggle-menu"><div class="btn" aria-hidden="true"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div></div>
+				</div>
+			</div>
 
-             
-          </nav>
+		</div>
+	</div>
 
-        <!-- Javascripts -->
-          <script src="https://code.jquery.com/jquery.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/custom-scripts.js"></script>
-          <script src="bower_components/classie/classie.js"></script>
+	<!-- Push Menu -->
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+		<br /><br /><br /><br /><br />
+		<a href="#" class="menu-buttons" data-slide-index="0">Home</a>
+		<a href="#" class="menu-buttons" data-slide-index="1">What I Bring</a>
+		<a href="#" class="menu-buttons" data-slide-index="2">Experience</a>
+		<a href="#" class="menu-buttons" data-slide-index="3">Projects</a>
+		<a href="#" class="menu-buttons" data-slide-index="4">Skills &amp; Education</a>
+		<a href="#" class="menu-buttons" data-slide-index="5">Writing</a>
+	</nav>
+
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom-scripts.js"></script>
 	</body>
 </html>
