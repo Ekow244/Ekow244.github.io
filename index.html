@@ -59,6 +59,29 @@
 					<div class="medium-heading"><span>AI agent work</span></div>
 
 					<div class="cv-entry bottom-border">
+						<div class="cv-title">Unattended QA agent that deploys code and validates acceptance criteria</div>
+						<ul>
+							<li>Runs on its own every morning from a scheduler on my Mac. It picks up the tickets waiting
+								for QA, reads each ticket's acceptance criteria and comments, finds the branches and reads
+								the diff.</li>
+							<li>Writes a test matrix first: each acceptance criterion mapped to how it will be proven,
+								including what must <b>not</b> happen.</li>
+							<li>Runs the tests, then a <b>sabotage check</b>: it reverts the fix and re-runs the new tests.
+								They must fail. Tests that still pass do not test the fix, and the report says so.</li>
+							<li>Deploys the branch to the shared test environment. It refuses if someone else used the
+								environment in the last four hours, announces the deploy, and rolls back automatically on
+								any failure.</li>
+							<li>Validates on the running system: drives the browser, simulates SMS, USSD and voice calls
+								(including a spoken question to the AI, using synthesised speech), then reads the database
+								back to prove what the server stored.</li>
+							<li>Reports pass, fail or partial per criterion. Criteria it could not test are listed as
+								untested, never as passed. It sends me a draft and posts to the ticket only when I say so.</li>
+							<li>Hard limits: never production, never a forced deploy, never a real message or call, never
+								sees the test account's password.</li>
+						</ul>
+					</div>
+
+					<div class="cv-entry bottom-border">
 						<div class="cv-title">Incident-triage agent with an evidence ledger</div>
 						<ul>
 							<li>A read-only investigator for production alarms. It first finds what emits the alarm, then
@@ -75,13 +98,12 @@
 					</div>
 
 					<div class="cv-entry bottom-border">
-						<div class="cv-title">QA and release agents</div>
+						<div class="cv-title">Adversarial review agents</div>
 						<ul>
-							<li>A daily QA run that takes tickets waiting for QA, deploys each branch to a test environment,
-								runs unit tests, browser tests and simulated SMS and voice calls, reads the results back from
-								the database and drafts a results table for my approval.</li>
-							<li>Two adversarial reviewers: one tries to disprove a change before it is merged, the other
-								looks for what a finished change breaks elsewhere.</li>
+							<li>One tries to disprove a change before it is merged: does the test fail when the fix is
+								reverted, does the code exist on the target branch, is the feature off by default?</li>
+							<li>The other looks for what a finished change breaks elsewhere and returns a go or no-go with
+								quoted evidence.</li>
 						</ul>
 					</div>
 
@@ -131,9 +153,18 @@
 					</div>
 
 					<div class="cv-entry bottom-border">
+						<div class="cv-title">I built an agent that deploys code and validates acceptance criteria, unattended</div>
+						<p>Every morning it takes the tickets waiting for QA, maps each acceptance criterion to a test,
+							checks that the new tests fail when the fix is reverted, deploys the branch to a shared test
+							environment with automatic rollback, and validates on the running system with browser
+							automation, simulated SMS and voice calls and database read-back. Untested criteria are
+							reported as untested. It drafts; I decide.</p>
+					</div>
+
+					<div class="cv-entry bottom-border">
 						<div class="cv-title">I have built multi-agent workflows and their oversight rules</div>
-						<p>A daily QA agent, two adversarial review agents, and written constraints: agents never merge,
-							deploy or sign off, and approval of one message does not cover the next.
+						<p>Two adversarial review agents and written constraints: agents never merge to production,
+							force a deploy or sign off, and approval of one message does not cover the next.
 							<a class="link" href="https://github.com/Ekow244/agent-guardrails">Sanitised samples</a>.</p>
 					</div>
 
