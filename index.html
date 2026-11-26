@@ -23,7 +23,7 @@
 				<div class="container">
 					<div class="home-heading-position">Daniel Melfah</div>
 					<div class="cv-tagline">
-						Release Manager at Viamo. I build LLM agents and the rules that keep them honest.
+						Release Manager at Viamo
 						<br>Toronto, ON · <a class="hyperlink" href="mailto:melfah.daniel@gmail.com">melfah.daniel@gmail.com</a>
 					</div>
 
@@ -44,16 +44,30 @@
 					<div class="medium-heading"><span>About</span></div>
 					<div class="cv-block">
 						<p>
-							Seven years keeping production systems running: incident response, observability, release
-							engineering and cloud security, most of it at Viamo, a platform that delivers voice and SMS
-							information services in low-connectivity regions.
+							For seven years I have done one job at rising stakes. It began with control systems in an
+							electricity utility. At Viamo, whose voice and SMS services reach 25 million active users in
+							55 countries, I am the gate on what reaches production, I secure it, and I lead the response
+							when something breaks or is attacked.
 						</p>
 						<p>
-							Over the past year I have designed, on my own initiative, a set of LLM agents that investigate
-							production alarms and test software changes, together with the written constraints they work
-							under. My interest in AI safety comes from that work: finding out what an agent actually did,
-							whether its report can be checked, and who is accountable when it is wrong.
+							Over the past year I have brought that discipline to LLM agents. I designed and built agents
+							that investigate production alarms and deploy and test code unattended, and the constraints
+							they work under: evidence for every claim, hard limits on what they may touch, and a human who
+							signs off. That is where my interest in AI safety comes from.
 						</p>
+					</div>
+
+					<div class="medium-heading"><span>At a glance</span></div>
+					<div class="cv-entry bottom-border">
+						<ul>
+							<li><b>Scale.</b> Release and incident lead for a platform serving 25 million active users in
+								55 countries, running around the clock.</li>
+							<li><b>Security.</b> Led the response to every major security incident on the platform,
+								including phishing and DDoS attacks.</li>
+							<li><b>AI agents in daily use.</b> My agents have handled around 100 tickets and alarms in the
+								past year. My manager and a developer on the team review their output and shape how they
+								work.</li>
+						</ul>
 					</div>
 
 					<div class="medium-heading"><span>AI agent work</span></div>
@@ -61,7 +75,7 @@
 					<div class="cv-entry bottom-border">
 						<div class="cv-title">Unattended QA agent that deploys code and validates acceptance criteria</div>
 						<ul>
-							<li>Runs on its own every morning from a scheduler on my Mac. It picks up the tickets waiting
+							<li>Runs unattended every morning against the QA queue of a production platform. It picks up the tickets waiting
 								for QA, reads each ticket's acceptance criteria and comments, finds the branches and reads
 								the diff.</li>
 							<li>Writes a test matrix first: each acceptance criterion mapped to how it will be proven,
@@ -130,8 +144,8 @@
 								secure networking, container and host hardening.</li>
 							<li>Integrated automated security testing into CI/CD pipelines, including static and dynamic
 								application security testing (SAST and DAST).</li>
-							<li>Support production services that run around the clock, and lead incident response for
-								them.</li>
+							<li>Led the response to every major security incident on the platform, including phishing and DDoS attacks.</li>
+							<li>Support production services that run around the clock.</li>
 						</ul>
 					</div>
 
@@ -155,10 +169,9 @@
 
 					<div class="cv-entry bottom-border">
 						<div class="cv-title">I built an LLM agent that does failure attribution</div>
-						<p>On my own initiative I designed an incident-triage agent that investigates production alarms
+						<p>I designed and built an incident-triage agent that investigates production alarms
 							read-only and keeps an evidence ledger: every claim is verified, unverified or refuted. A root
-							cause needs two independent sources. A separate session checks the agent's claims before a
-							human approves anything.</p>
+							cause needs two independent sources. A separate session checks the agent's claims before a human approves anything. It is in daily use, and my manager and a developer on the team feed back on its reports.</p>
 					</div>
 
 					<div class="cv-entry bottom-border">
@@ -192,15 +205,9 @@
 								AWS and Kubernetes, and security testing (SAST and DAST) in CI/CD.</li>
 							<li>Postgraduate Certificate in Cybersecurity; BSc Computer Engineering, with engineering
 								mathematics, probability and statistics.</li>
-							<li>Intermediate Python and Bash. Most of my code is now written with AI coding tools, which I
-								direct and review. I work daily with Git and GitHub.</li>
+							<li>Led the response to security incidents, including phishing and DDoS attacks.</li>
+							<li>I build by directing and reviewing AI coding tools: the agents above, a production web platform, and a 16-chapter game with about 240 automated tests. Python and Bash by hand; Git and GitHub daily.</li>
 						</ul>
-					</div>
-
-					<div class="cv-entry bottom-border">
-						<div class="cv-title">What I lack</div>
-						<p>I have not done ML research or trained models, I have not used OpenTelemetry in depth, and I
-							have no legal background. I contribute as an engineer and want to learn the research side.</p>
 					</div>
 
 					<div class="cv-entry">
@@ -227,8 +234,10 @@
 						<div class="cv-title">Release Manager (Cloud Infrastructure &amp; DevSecOps)</div>
 						<div class="cv-when">Viamo · remote · January 2022 to present</div>
 						<ul>
-							<li>Lead production incident response and release management for customer-facing voice, SMS and
-								AI services running around the clock on AWS, GCP, OCI, Kubernetes and Linux.</li>
+							<li>Trusted with what reaches production: I own releases and lead incident response for voice, SMS and AI services used by 25 million people in 55 countries, running around the clock on AWS, GCP, OCI, Kubernetes and Linux.</li>
+							<li>Led the response to every major security incident on the platform, including phishing and DDoS attacks.</li>
+							<li>Received the Viamo Values Award for delight and impact.</li>
+							<li>Designed and built the LLM agents that now triage production alarms and test changes before release.</li>
 							<li>Identify and remediate cloud and application security issues on production and on the
 								call and message delivery servers; harden AWS and Kubernetes environments.</li>
 							<li>Integrated automated security testing (SAST and DAST) into CI/CD pipelines.</li>
@@ -239,7 +248,6 @@
 								alerts, with human review of every production change.</li>
 							<li>Cut annual infrastructure spend from about $30K to $17K by moving workloads to OCI and
 								Graviton instances, and cut monthly GCP spend by about 25%.</li>
-							<li>Received the Viamo Values Award for delight and impact.</li>
 						</ul>
 					</div>
 
@@ -247,6 +255,7 @@
 						<div class="cv-title">NOC Engineer</div>
 						<div class="cv-when">Viamo · remote · January 2021 to January 2022</div>
 						<ul>
+							<li>First line of defence for the production platform; promoted to Release Manager after a year.</li>
 							<li>Automated infrastructure and operations with Terraform, Ansible, Python, Bash and Jenkins,
 								halving deployment time from about 40 minutes to under 20.</li>
 							<li>Reviewed system designs for failure modes before release; wrote the runbooks and
@@ -260,8 +269,7 @@
 						<div class="cv-title">Junior Systems Administrator</div>
 						<div class="cv-when">Electricity Company of Ghana · Accra · September 2019 to December 2020</div>
 						<ul>
-							<li>Worked with PLC programming and SCADA systems in an electricity utility: early exposure to
-								industrial control systems and the security of critical infrastructure.</li>
+							<li>Worked with PLC programming and SCADA systems in a national electricity utility, where a fault is physical: my grounding in industrial control systems and the security of critical infrastructure.</li>
 							<li>Supported AWS environments, Docker and Kubernetes workloads, and incident troubleshooting.</li>
 						</ul>
 					</div>
@@ -291,6 +299,12 @@
 					<div class="heading-position">Projects</div>
 
 					<div class="cv-entry bottom-border">
+						<div class="cv-title">PrairieTask <span class="cv-year">2025 to present</span></div>
+						<p>Designed, built and operate a production web platform with more than 100 registered users, alone:
+							infrastructure, authentication, monitoring, backups, security and incident response.</p>
+					</div>
+
+					<div class="cv-entry bottom-border">
 						<div class="cv-title">Humanity Explorer <span class="cv-year">2026</span></div>
 						<p>A 16-chapter branching narrative game about the Atlantic slave trade and its descendants,
 							written in TypeScript with AI coding tools. About 240 automated tests walk every choice path,
@@ -312,12 +326,6 @@
 						<p>A multi-tenant HIPAA security risk assessment platform, with row-level security in Postgres
 							and an integration test proving that one tenant cannot read or write another's data.
 							<a class="link" href="https://github.com/Ekow244/HIPAA">Code</a>.</p>
-					</div>
-
-					<div class="cv-entry bottom-border">
-						<div class="cv-title">PrairieTask <span class="cv-year">2025 to present</span></div>
-						<p>Built and run a production web platform with more than 100 registered users, alone:
-							infrastructure, authentication, monitoring, backups, security and incident response.</p>
 					</div>
 
 					<div class="subheading-position">Earlier</div>
@@ -385,8 +393,7 @@
 					</div>
 					<div class="cv-entry">
 						<div class="cv-title">Code</div>
-						<p>Intermediate Python and Bash; TypeScript and PHP codebases. Most of my code is now written with
-							AI coding tools, which I direct and review.</p>
+						<p>Python and Bash; TypeScript and PHP codebases. I ship by directing and reviewing AI coding tools.</p>
 					</div>
 
 					<div class="subheading-position">Education</div>
